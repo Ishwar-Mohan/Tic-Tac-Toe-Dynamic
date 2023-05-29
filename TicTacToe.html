@@ -1,0 +1,95 @@
+<html>
+ <head>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jQuery.js"></script>
+ </head>
+ <body>
+
+	<!-- popup -->
+	<div id="popup"></div>
+
+	<!-- wining popup msg -->
+	<div class="Winpopup">
+        <h1 id="wins"></h1>
+    </div>
+
+	<!-- main container start -->
+	<div id="main-container">
+
+		<!-- header starts -->
+		<header id="header">
+			<!-- logo -->
+			 <div id="logo-container"><img src="images/logo.png" id="logo">
+			 </div>
+			<!-- heading -->
+			<h1 id="heading">Tic Tac Toe</h1>
+			<h4 id="developer">- developed by Ishwar Mohan</h4>
+			<div class="clr"></div>
+		</header>
+		<!-- header starts -->
+		
+		<!-- container starts -->
+		<div id="container">
+			
+			<div id="inner-top-container">
+
+				<!-- dropdown starts-->
+				<div id="dropdown-container">
+					<label for="dropdown-menu" class="label">CHOOSE A GRID : </label>
+					<select name="dropdown-menu" id="dropdown-menu">
+						<option value="0" id="menu">Select</option>
+						<option value="3" id="menu-one">3x3</option>
+						<option value="4" id="menu-two">4x4</option>
+						<option value="5" id="menu-three">5x5</option>
+						<option value="6" id="menu-four">6x6</option>
+						<option value="7" id="menu-five">7x7</option>
+						<option value="8" id="menu-six">8x8</option>
+						<option value="9" id="menu-seven">9x9</option>
+						<option value="10" id="menu-eight">10x10</option>
+					</select>
+				</div>
+				<!-- dropdown ends -->
+
+				<!-- start & stop button -->
+				<div id="start-stop-btn">
+					<!-- start button -->
+					<input type="button" class="button" id="start" value="START">
+
+					<!-- reset button -->
+					<input type="button" class="button" id="resetbtn" value="RESET">
+
+					<!-- stop button -->
+					<input type="button" class="button" id="stop" value="STOP">
+				</div>
+
+				<div class="clr"></div>
+			</div>
+
+			<!-- score & turn -->
+			<div id="score-turn">
+
+				<!-- turn -->
+				<div id="turn">
+					<h2 id="whoes-turn">Now X's Turn</h2>
+				</div>
+
+				<!-- score card -->
+				<div id="score-card">
+					<h2>Player X : <h2 id="xPoints">0</h2></h2>
+					<h2>Player O : <h2 id="oPoints">0</h2></h2>
+				</div>
+			</div>
+			<h1 id="welcome">Welcome..!!</h1>
+			<h4 id="choseGridMsg">Please choose the Grid to start..</h4>
+		</div>
+		<!-- container ends-->
+
+	</div>
+	<!-- main container ends -->
+
+	<script src="js/script.js"></script>
+
+ </body>
+</html>
